@@ -4,83 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ぽちぽち/profile</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+           gap: 20px;
+            }
+        img{
+            width:100px;
+            height:100px;
+            object-fit:cover;
+            border-radius:50%;
+            }
+    </style>
 </head>
 <body>
-    <div class="page-shell">
-        <header class="hero">
-            <nav class="topbar">
-                <p class="brand">POCHIPOCHI</p>
-                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="テーマを切り替える">
-                    Light
-                </button>
-            </nav>
-
-            <section class="hero-card reveal">
-                <div class="hero-image-wrap">
-                    <img class="hero-image" src="画像/IMG_0515.jpeg" alt="プロフィール画像">
-                    <span class="status-badge">Now Active</span>
-                </div>
-
-                <div class="hero-copy">
-                    <p class="eyebrow" id="greeting">Hello</p>
-                    <h1>ぽちぽち</h1>
-                    <p class="lead">skg67 / 拡大技術幹部 / 映像同好会 / バスケ部</p>
-                    <p class="intro">
-                        技術も表現もどちらも楽しみながら、興味を広げていくタイプのプロフィールページです。
-                        シンプルだけど見やすく、あとから内容を足していける形にしています。
-                    </p>
-
-                    <div class="action-row">
-                        <a class="button primary" href="#about">プロフィールを見る</a>
-                        <a class="button secondary" href="#favorites">好きなこと</a>
-                    </div>
-                </div>
-            </section>
-        </header>
-
-        <main class="content">
-            <section id="about" class="panel reveal">
-                <p class="section-label">About</p>
-                <h2>自分について</h2>
-                <p>
-                    人と関わりながら新しいことを覚えるのが好きで、技術・映像・スポーツの全部に熱中できるのが強みです。
-                    ひとつに絞るより、複数のことを行き来しながら成長していくスタイルを大事にしています。
-                </p>
-            </section>
-
-            <section id="favorites" class="grid-section">
-                <article class="info-card reveal">
-                    <p class="section-label">Tech</p>
-                    <h3>技術</h3>
-                    <p>Web制作やページづくりを通して、見た目と使いやすさの両方を学び中。</p>
-                </article>
-
-                <article class="info-card reveal">
-                    <p class="section-label">Movie</p>
-                    <h3>映像</h3>
-                    <p>映像同好会での活動を通して、伝え方や雰囲気づくりにも興味があります。</p>
-                </article>
-
-                <article class="info-card reveal">
-                    <p class="section-label">Sports</p>
-                    <h3>バスケ</h3>
-                    <p>体を動かす時間も大切にしていて、集中力や切り替えにもつながっています。</p>
-                </article>
-            </section>
-
-            <section class="timeline panel reveal">
-                <p class="section-label">Style</p>
-                <h2>こんなページにしていきたい</h2>
-                <ul>
-                    <li>プロフィールがひと目で伝わること</li>
-                    <li>スマホでも見やすいこと</li>
-                    <li>あとから作品やSNSを追加しやすいこと</li>
-                </ul>
-            </section>
-        </main>
-    </div>
-
-    <script src="script.js"></script>
+    <header>
+        <img class="hero-image" src="画像/IMG_0515.jpeg" alt="プロフィール画像">
+        <div class="text">
+            <h1>ぽちぽち</h1>
+            <p class="lead">skg67 / 拡大技術幹部 / 映像同好会 / バスケ部</p>
+            <h2>About me</h2>
+            <p class="about me">イキすぎる遠野</p>
+            <h2>経歴</h2>
+            <p class="keireki">2024-2027</p>
+            <p class="keireki">聖光学院中学校</p>
+            <p class="keireki">2027-2030</p>
+            <p class="keireki">聖光学院高校</p>
+            <h2>links</h2>
+            <a href="https://x.com/seikofesta_69th" target="_blank" rel="noopener noreferrer"> X </a>
+            <a href="https://www.instagram.com/seikofesta_69th/" target="_blank" rel="noopener noreferrer"> Instagram </a>
+            <a href="https://www.facebook.com/profile.php?id=61568203812056" target="_blank" rel="noopener noreferrer">facebook</a>
+            <h2>Blog</h2>
+            <p class="blog">気付いた時に投稿するとかしないとか 頻度は少ないかも</p>
+        </div>
+    </header>
 </body>
 </html>
